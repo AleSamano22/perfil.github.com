@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+						 "div1 div2 div3"
+						 "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .footer,
+.contenedor div1
+.contenedor div2
+.contenedor div3 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header{
+    background: #946c3b;
+    color: black;
+    grid-area: header;
+}
+
+a{
+    display: inline-block;
+    width: 150px;
+    background-color: #5f401a;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 80px;
+    margin-left: 95px;
+}
+
+.navegacion{
+    padding: 20px 0px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.navegacion:hover{
+    background-color: #251a0c;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.contenedor .flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor .flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor .flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.div1{
+    margin-left: 60px;
+   background-image: url(imagen/IMG_20221022_171811.png);
+   background-repeat: no-repeat;
+   background-size: 240px;
+   background-position: center;
+}
+
+.item{
+    background-color:#ac814c;
+    margin: 15px;
+    padding: 60px;
+    width: 180px;
+    height: 200px;
+}
+
+.div2{
+    line-height: 2;
+}
+
+.div3{
+    line-height: 1;
+}
+
+footer{
+    background-color: #946c3b;
+    font-size: 20px;
+    text-align: center;
+    margin: -35px;
+    color: #fff;
+    padding: 3px 0px;
+    margin-left: 180px;
+    margin-right: 160px;
+    border-radius: 4px;
+    grid-area: footer;
+}
+
+.social{
+    margin: 3px;
+}
+
+.bx{
+    display:flex;
+    justify-content: space-around;
+    background-color: #946c3b;
+    color:#fff ;
+    font-size: 28px;
+    height: 30px;
+    width: 40px;
+}
+
+.bx:hover{
+    background-color: #251a0c;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 360px){
+	.contenedor {
+		grid-template-areas: "header header header"
+                         "div1 div2 div3"
+						 "footer footer footer";
+	}
+}
